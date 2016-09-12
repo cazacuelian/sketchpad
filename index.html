@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sketchpad</title>
+		<link type="text/css" rel="stylesheet" href="css/eric-meyer-reset.min.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.color-2.1.2.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/sketchpad.css">
+		<script type="text/javascript" src="js/sketchpad.js"></script>
+	</head>
+	<body>
+		<div id="palette">
+			<p>Colors</p>
+			<div class="colours" style="background-color: #B0CB1F"></div>
+			<div class="colours" style="background-color: #FFED00"></div>
+			<div class="colours" style="background-color: #66C3D0"></div>
+			<div class="colours" style="background-color: #008DD2"></div>
+			<div class="colours" style="background-color: #7690C9"></div>
+			<div class="colours" style="background-color: #EF7F1A"></div>
+			<div class="colours" style="background-color: #AE4A84"></div>
+			<div class="colours" style="background-color: #E5097F"></div>
+			<div class="colours" style="background-color: #E31E24"></div>
+			<div class="colours" style="background-color: #727271"></div>
+			<div class="colours" style="background-color: #F2DDFE"></div>
+			
+			<div id="tools">
+				<p>Tools</p>
+				<div id="eraser" onclick="erase();"></div>
+				<div id="pencil" onclick="pencil();"></div>
+			</div>
+		</div>
+		
+		<table cellspacing="0" id="grid"></table>
+		<button id="reset" onclick="resetButton();">Reset</button>
+		<button id="random" onclick="$('body').css('cursor', 'default'); rand = true;">Randomize</button>
+		<button id="trail" onclick="trail();">Trail</button>
+	<body>
+</html>
